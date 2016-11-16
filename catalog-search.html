@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+
+    <!-- Bootstrap -->
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/jquery.nouislider.min.css" rel="stylesheet">
+	<link href="css/jquery.formstyler.css" rel="stylesheet">
+	<link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/mans-styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="header" id="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="header-top__container">
+						<nav class="header-top__nav">
+							<ul class="header-top__nav__list horizontal">
+								<li class="header-top__nav__item"><a href="#">My Account</a></li>
+								<li class="header-top__nav__item"><a href="#">Register</a></li>
+								<li class="header-top__nav__item"><a href="#">Login</a></li>
+								<li class="header-top__nav__item"><a href="#">Wish List</a><span class="count-number">7</span></li>
+								<li class="header-top__nav__item"><a href="#">Shopping Cart</a></li>
+								<li class="header-top__nav__item"><a href="#">Checkout</a></li>
+							</ul>
+						</nav>
+						<div class="header-top__right">
+							<div class="header-top__currency pull-left" id="plugin-currency">
+								<ul class="header-top__currency__list horizontal">
+									<li class="header-top__currency__item">€</li>
+									<li class="header-top__currency__item">£</li>
+									<li class="header-top__currency__item active">$</li>
+								</ul>
+							</div>
+							<div class="header-top__lang pull-left">
+								<select class="styled select-lang">
+									<option class="rus">Russian</option>
+									<option class="eng">English</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end .header-top -->
+		<div class="header-middle">
+			<div class="container">
+				<div class="row">
+					<div class="header-middle__logo"><a class="icon-logo-apostrophe" href="#"><img width="111" height="38" src="./img/logo.png" alt=""/></a></div>
+					<div class="header-middle__cart" id="header-cart">
+						<div class="header-middle__cart__container">
+							<div class="header-middle__cart__status icon-cart icon-arrow-small">
+								<strong>Your cart:</strong>
+								<span id="hm-cart-items">3 items on $1900</span>
+							</div>
+							<div class="cart__sub">
+								<ul class="cart__sub__list">
+									<li class="cart__sub__item">
+										<a class="cart__sub__product" href="#">
+											<span class="cart__sub__photo"><img width="76" height="61" src="./img/content/product-cart.gif" alt=""/></span>
+											<span class="cart__sub__info">
+												<span class="cart__sub__title">There are many variations</span>
+												<span class="cart__sub__price">$1400</span>
+											</span>
+										</a>
+										<a class="cart__sub__close icon-close-dark" href="#">close</a>
+									</li>
+									<li class="cart__sub__item">
+										<a class="cart__sub__product" href="#">
+											<span class="cart__sub__photo"><img width="76" height="61" src="./img/content/product-cart.gif" alt=""/></span>
+											<span class="cart__sub__info">
+												<span class="cart__sub__title">There are many variations</span>
+												<span class="cart__sub__price">$1400</span>
+											</span>
+										</a>
+										<a class="cart__sub__close icon-close-dark" href="#">close</a>
+									</li>
+									<li class="cart__sub__item">
+										<a class="cart__sub__product" href="#">
+											<span class="cart__sub__photo"><img width="76" height="61" src="./img/content/product-cart.gif" alt=""/></span>
+											<span class="cart__sub__info">
+												<span class="cart__sub__title">There are many variations</span>
+												<span class="cart__sub__price">$1400</span>
+											</span>
+										</a>
+										<a class="cart__sub__close icon-close-dark" href="#">close</a>
+									</li>
+								</ul>
+								<div class="cart__sub__setting">
+									<ul class="horizontal">
+										<li><a class="btn" href="#">My cart</a></li>
+										<li><a class="btn gray" id="cart-sub-clear" href="#">Clear</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-middle__nav" id="header-middle-nav">
+						<a class="icon-menu" href="#">
+							<span class="menu-line">
+								<span class="line"></span>
+								<span class="line"></span>
+								<span class="line"></span>
+							</span>
+							Categories
+						</a>
+					</div>
+				</div>
+			</div>
+		</div><!-- end .header-middle -->
+		<nav class="hm-nav__sub small" id="header-middle-nav-sub">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-sm-3">
+						<p>Desktops</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">PC</a><span class="count-number">2</span></li>
+							<li><a href="#">Mac</a><span class="count-number">25</span></li>
+						</ul>
+						<p>Laptops &amp; Notebook</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">Macs</a><span class="count-number">2</span></li>
+							<li><a href="#">Windows</a><span class="count-number">32</span></li>
+							<li><a href="#">Components</a><span class="count-number">22</span></li>
+							<li><a href="#">Mice and Trackballs</a><span class="count-number">12 089</span></li>
+							<li><a href="#">Monitors</a><span class="count-number">200</span></li>
+							<li><a href="#">Printers</a><span class="count-number">13</span></li>
+							<li><a href="#">Scanners</a><span class="count-number">4</span></li>
+							<li><a href="#">Web Cameras</a><span class="count-number">98</span></li>
+						</ul>
+						<p>Components</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">Mice and Trackballs</a><span class="count-number">2</span></li>
+							<li><a href="#">Monitors</a><span class="count-number">34</span></li>
+							<li><a href="#">Printers</a><span class="count-number">2</span></li>
+							<li><a href="#">Scanners</a><span class="count-number">956</span></li>
+							<li><a href="#">Web Cameras</a><span class="count-number">2</span></li>
+						</ul>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<p>Components</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">Mice and Trackballs</a><span class="count-number">2</span></li>
+							<li><a href="#">Monitors</a><span class="count-number">34</span></li>
+							<li><a href="#">Printers</a><span class="count-number">2</span></li>
+							<li><a href="#">Scanners</a><span class="count-number">956</span></li>
+							<li><a href="#">Web Cameras</a><span class="count-number">2</span></li>
+						</ul>
+						<p>Laptops &amp; Notebook</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">Macs</a><span class="count-number">2</span></li>
+							<li><a href="#">Windows</a><span class="count-number">32</span></li>
+							<li><a href="#">Components</a><span class="count-number">22</span></li>
+							<li><a href="#">Mice and Trackballs</a><span class="count-number">12 089</span></li>
+							<li><a href="#">Monitors</a><span class="count-number">200</span></li>
+							<li><a href="#">Printers</a><span class="count-number">13</span></li>
+							<li><a href="#">Scanners</a><span class="count-number">4</span></li>
+							<li><a href="#">Web Cameras</a><span class="count-number">98</span></li>
+						</ul>
+						<p>Desktops</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">PC</a><span class="count-number">2</span></li>
+							<li><a href="#">Mac</a><span class="count-number">25</span></li>
+						</ul>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<p>Desktops</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">PC</a><span class="count-number">2</span></li>
+							<li><a href="#">Mac</a><span class="count-number">25</span></li>
+						</ul>
+						<p>Laptops &amp; Notebook</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">Macs</a><span class="count-number">2</span></li>
+							<li><a href="#">Windows</a><span class="count-number">32</span></li>
+							<li><a href="#">Components</a><span class="count-number">22</span></li>
+							<li><a href="#">Mice and Trackballs</a><span class="count-number">12 089</span></li>
+							<li><a href="#">Monitors</a><span class="count-number">200</span></li>
+							<li><a href="#">Printers</a><span class="count-number">13</span></li>
+							<li><a href="#">Scanners</a><span class="count-number">4</span></li>
+							<li><a href="#">Web Cameras</a><span class="count-number">98</span></li>
+						</ul>
+						<p>Components</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">Mice and Trackballs</a><span class="count-number">2</span></li>
+							<li><a href="#">Monitors</a><span class="count-number">34</span></li>
+							<li><a href="#">Printers</a><span class="count-number">2</span></li>
+							<li><a href="#">Scanners</a><span class="count-number">956</span></li>
+							<li><a href="#">Web Cameras</a><span class="count-number">2</span></li>
+						</ul>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<p>Components</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">Mice and Trackballs</a><span class="count-number">2</span></li>
+							<li><a href="#">Monitors</a><span class="count-number">34</span></li>
+							<li><a href="#">Printers</a><span class="count-number">2</span></li>
+							<li><a href="#">Scanners</a><span class="count-number">956</span></li>
+							<li><a href="#">Web Cameras</a><span class="count-number">2</span></li>
+						</ul>
+						<p>Laptops &amp; Notebook</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">Macs</a><span class="count-number">2</span></li>
+							<li><a href="#">Windows</a><span class="count-number">32</span></li>
+							<li><a href="#">Components</a><span class="count-number">22</span></li>
+							<li><a href="#">Mice and Trackballs</a><span class="count-number">12 089</span></li>
+							<li><a href="#">Monitors</a><span class="count-number">200</span></li>
+							<li><a href="#">Printers</a><span class="count-number">13</span></li>
+							<li><a href="#">Scanners</a><span class="count-number">4</span></li>
+							<li><a href="#">Web Cameras</a><span class="count-number">98</span></li>
+						</ul>
+						<p>Desktops</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">PC</a><span class="count-number">2</span></li>
+							<li><a href="#">Mac</a><span class="count-number">25</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav><!-- end .hm-nav__sub -->
+	</header><!-- end .header -->
+	<div class="main" id="main">
+		<div class="breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<ul class="breadcrumbs__lsit horizontal">
+						<li>
+							<a href="#">Index</a>
+						</li>
+						<li>
+							<a href="#">Watches</a>
+						</li>
+						<li>
+							New Skeleton Mens Watches Mechanical Wrist Watch
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div><!-- end .breadcrumbs -->
+		<div class="best-sellers products-catalog">
+			<div class="products-catalog__options">
+				<div class="products-catalog__options__visible">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<h1>Catalog</h1>
+								<div class="search-sub__form">
+									<form action="#" method="post">
+										<ul class="search-sub__form__list">
+											<li class="search-sub__item big">
+												<input type="text" class="input-text search-text" placeholder="Search"/>
+											</li>
+											<li class="search-sub__item medium">
+												<select class="styled select-search">
+													<option>Insert search category</option>
+													<option>Jewelry &amp; Watches</option>
+													<option>Apparel &amp; Accessories</option>
+												</select>
+											</li>
+											<li class="search-sub__item small">
+												<button type="submit" class="btn-search icon-search-color">search</button>
+											</li>
+										</ul>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="best-sellers__mobile-nav">
+				<a class="menu-line" href="#">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+					See categories
+				</a>
+				<div class="best-sellers__mobile-nav__hide">
+					<ul class="item-nav__list">
+						<li><a href="#"><span>–</span> Appliances</a></li>
+						<li><a href="#"><span>–</span> Baby, Kids, Toys</a></li>
+						<li><a href="#"><span>–</span> Computer, Parts</a></li>
+						<li><a href="#"><span>–</span> Software</a></li>
+						<li><a href="#"><span>–</span> Desktops</a></li>
+						<li><a href="#"><span>–</span> Laptops &amp; Notebooks</a></li>
+						<li><a href="#"><span>–</span> Components</a></li>
+						<li><a href="#"><span>–</span> Tablets</a></li>
+						<li><a href="#"><span>–</span> Phones &amp; PDAs</a></li>
+						<li><a href="#"><span>–</span> Cameras</a></li>
+						<li><a href="#"><span>–</span> Tablets</a></li>
+						<li><a href="#"><span>–</span> Phones &amp; PDAs</a></li>
+						<li><a href="#"><span>–</span> Components</a></li>
+					</ul>
+					<div class="item-nav__btn"><a class="btn medium" href="#">All categories</a></div>
+				</div>
+			</div>
+			<div class="best-sellers__middle">
+				<div id="container">
+					<div class="grid-sizer"></div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x322" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless Steel Luxury</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item item-nav__height">
+						<div class="item__container">
+							<nav class="item-nav">
+								<h3>Popular categories</h3>
+								<ul class="item-nav__list">
+									<li><a href="#"><span>–</span> Appliances</a></li>
+									<li><a href="#"><span>–</span> Baby, Kids, Toys</a></li>
+									<li><a href="#"><span>–</span> Computer, Parts</a></li>
+									<li><a href="#"><span>–</span> Software</a></li>
+									<li><a href="#"><span>–</span> Desktops</a></li>
+									<li><a href="#"><span>–</span> Laptops &amp; Notebooks</a></li>
+									<li><a href="#"><span>–</span> Components</a></li>
+									<li><a href="#"><span>–</span> Tablets</a></li>
+									<li><a href="#"><span>–</span> Phones &amp; PDAs</a></li>
+									<li><a href="#"><span>–</span> Cameras</a></li>
+									<li><a href="#"><span>–</span> Tablets</a></li>
+									<li><a href="#"><span>–</span> Phones &amp; PDAs</a></li>
+									<li><a href="#"><span>–</span> Components</a></li>
+								</ul>
+								<div class="item-nav__btn"><a class="btn medium" href="#">All categories</a></div>
+							</nav>
+						</div>
+					</div>
+					<div class="item item__height">
+						<div class="item__container">	
+							<img src="http://placehold.it/257x322" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless Steel Luxury</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x322" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless Steel Luxury</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x172" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x322" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless Steel Luxury</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x322" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless Steel Luxury</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item w2 item__height">
+						<div class="item__container">
+							<img src="http://placehold.it/533x232" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless Steel Luxury</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>	
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x172" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x434" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless Steel Luxury</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x237" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless Steel Luxury</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x237" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless Steel Luxury</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item item__height">
+						<div class="item__container">
+							<img src="http://placehold.it/257x174" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainles</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x174" alt=""/>
+						</div>
+						<span class="item__discount">
+							<a href="#">
+								<span class="item__discount__percentage"><span>-10%</span></span>
+							</a>
+						</span>
+						<span class="item__info">
+							<span class="item__info__title">Fashion Black Stainless</span>
+							<span class="item__info__bottom">
+								<span class="item__info__price">$1 900</span>
+								<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+							</span>
+							<a class="item__info__link" href="#product"></a>
+						</span>
+					</div>
+				</div>
+				<div id="container-more">
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x322" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless Steel Luxury</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__container">	
+							<img src="http://placehold.it/257x172" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless Steel Luxury</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x322" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless Steel Luxury</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x322" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x172" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless Steel Luxury</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x322" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless Steel Luxury</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x322" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless Steel Luxury</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>	
+					<div class="item w2">
+						<div class="item__container">
+							<img src="http://placehold.it/533x232" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x322" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless Steel Luxury</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x172" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless Steel Luxury</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x429" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainless Steel Luxury</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item item__height">
+						<div class="item__container">
+							<img src="http://placehold.it/257x232" alt=""/>
+							<span class="item__info">
+								<span class="item__info__title">Fashion Black Stainles</span>
+								<span class="item__info__bottom">
+									<span class="item__info__price">$1 900</span>
+									<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+								</span>
+								<a class="item__info__link" href="#product"></a>
+							</span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x232" alt=""/>
+						</div>
+						<span class="item__discount">
+							<a href="#">
+								<span class="item__discount__percentage"><span>-10%</span></span>
+							</a>
+						</span>
+						<span class="item__info">
+							<span class="item__info__title">Fashion Black Stainless</span>
+							<span class="item__info__bottom">
+								<span class="item__info__price">$1 900</span>
+								<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+							</span>
+							<a class="item__info__link" href="#product"></a>
+						</span>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x232" alt=""/>
+						</div>
+						<span class="item__info">
+							<span class="item__info__title">Fashion Black Stainless</span>
+							<span class="item__info__bottom">
+								<span class="item__info__price">$1 900</span>
+								<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+							</span>
+							<a class="item__info__link" href="#product"></a>
+						</span>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x171" alt=""/>
+						</div>
+						<span class="item__info">
+							<span class="item__info__title">Fashion Black Stainless</span>
+							<span class="item__info__bottom">
+								<span class="item__info__price">$1 900</span>
+								<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+							</span>
+							<a class="item__info__link" href="#product"></a>
+						</span>
+					</div>
+					<div class="item">
+						<div class="item__container">
+							<img src="http://placehold.it/257x171" alt=""/>
+						</div>
+						<span class="item__discount">
+							<a href="#">
+								<span class="item__discount__percentage"><span>-10%</span></span>
+							</a>
+						</span>
+						<span class="item__info">
+							<span class="item__info__title">Fashion Black Stainless</span>
+							<span class="item__info__bottom">
+								<span class="item__info__price">$1 900</span>
+								<a class="item__info__cart icon-cart-small" href="#cart">cart</a>
+							</span>
+							<a class="item__info__link" href="#product"></a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="best-sellers__bottom best-sellers__load">
+				<div class="container">
+					<div class="row">
+						<div class="best-sellers__btn">
+							<ul class="best-sellers__btn__list horizontal">
+								<li class="best-sellers__btn__item"><a class="btn medium gray icon-load" href="#">Load more</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end .best-sellers -->
+		<div class="promo-text">
+			<div class="container">
+				<div class="row">
+					<h2>
+						<span>Fashion Black</span>
+						<span>Stainless <strong>Steel Luxury</strong></span>
+						<span>Sport Analog</span>
+					</h2>
+				</div>
+			</div>
+		</div><!-- end .promo-text -->
+		<nav class="main-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-3 wow fadeInUp animated" data-wow-delay="0.2s" data-wow-offset="50" data-wow-duration="1s">
+						<p>Information</p>
+						<ul class="main-nav__list">
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Delivery Information</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms &amp; Conditions</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-3 wow fadeInUp animated" data-wow-delay="0.4s" data-wow-offset="50" data-wow-duration="1s">
+						<p>Extras</p>
+						<ul class="main-nav__list">
+							<li><a href="#">Brands</a></li>
+							<li><a href="#">Gift Vouchers</a></li>
+							<li><a href="#">Affiliates</a></li>
+							<li><a href="#">Specials</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-3 wow fadeInUp animated" data-wow-delay="0.6s" data-wow-offset="50" data-wow-duration="1s">
+						<p>My account</p>
+						<ul class="main-nav__list">
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Order History</a></li>
+							<li><a href="#">Wish List</a></li>
+							<li><a href="#">Newsletter</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-3 wow fadeInUp animated" data-wow-delay="0.8s" data-wow-offset="50" data-wow-duration="1s">
+						<p>Customer service</p>
+						<ul class="main-nav__list">
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Returns</a></li>
+							<li><a href="#">Site Map</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav><!-- end .main-nav -->
+		<div class="pay-systems">
+			<div class="container">
+				<div class="row">
+					<div class="pay-systems__buffer">
+						<ul>
+							<li><a class="visa" href="#"></a></li>
+							<li><a class="matercard" href="#"></a></li>
+							<li><a class="webmoney" href="#"></a></li>
+							<li><a class="alfa" href="#"></a></li>
+							<li><a class="paypal" href="#"></a></li>
+							<li><a class="unistream" href="#"></a></li>
+							<li><a class="ukash" href="#"></a></li>
+							<li><a class="easypay" href="#"></a></li>
+							<li><a class="skrill" href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!-- end .pay-systems -->
+	</div><!-- end .main -->
+	<footer class="footer" id="footer">
+		<div class="footer-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 pull-right">
+						<div class="social-buttons">
+							<ul class="social-buttons__list horizontal">
+								<li class="social-buttons__item"><a class="sb-vk" href="#"></a></li>
+								<li class="social-buttons__item"><a class="sb-tw" href="#"></a></li>
+								<li class="social-buttons__item"><a class="sb-yo" href="#"></a></li>
+								<li class="social-buttons__item"><a class="sb-ml" href="#"></a></li>
+								<li class="social-buttons__item"><a class="sb-fb" href="#"></a></li>
+								<li class="social-buttons__item"><a class="sb-ot" href="#"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="footer-middle__logo"><a href="#"><img width="111" height="38" src="./img/logo-dark.png" alt=""/></a></div>
+						<div class="footer-middle__design">
+							Design <a href="#">By MatArt</a>
+							<br>
+							OpenCart Man shop theme
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end .footer-middle -->
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<nav class="footer-bottom__nav">
+						<ul class="footer-bottom__nav__list horizontal">
+							<li class="footer-bottom__nav__item"><a href="#">My Account</a></li>
+							<li class="footer-bottom__nav__item"><a href="#">Register</a></li>
+							<li class="footer-bottom__nav__item"><a href="#">Login</a></li>
+							<li class="footer-bottom__nav__item"><a href="#">Wish List</a><span class="count-number">7</span></li>
+							<li class="footer-bottom__nav__item"><a href="#">Shopping Cart</a></li>
+							<li class="footer-bottom__nav__item"><a href="#">Checkout</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div><!-- end .footer-bottom -->
+	</footer><!-- end .footer -->
+	<div class="sepia-filter"></div><!-- end .sepia-filter -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/jquery.wow.min.js"></script>
+	<script src="js/jquery.nouislider.all.min.js"></script>
+	<script src="js/jquery.barrating.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/mans-main.js"></script>
+  </body>
+</html>

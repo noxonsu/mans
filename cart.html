@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+
+    <!-- Bootstrap -->
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/jquery.nouislider.min.css" rel="stylesheet">
+	<link href="css/jquery.formstyler.css" rel="stylesheet">
+	<link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/mans-styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="header" id="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="header-top__container">
+						<nav class="header-top__nav">
+							<ul class="header-top__nav__list horizontal">
+								<li class="header-top__nav__item"><a href="#">My Account</a></li>
+								<li class="header-top__nav__item"><a href="#">Register</a></li>
+								<li class="header-top__nav__item"><a href="#">Login</a></li>
+								<li class="header-top__nav__item"><a href="#">Wish List</a><span class="count-number">7</span></li>
+								<li class="header-top__nav__item"><a href="#">Shopping Cart</a></li>
+								<li class="header-top__nav__item"><a href="#">Checkout</a></li>
+							</ul>
+						</nav>
+						<div class="header-top__right">
+							<div class="header-top__currency pull-left" id="plugin-currency">
+								<ul class="header-top__currency__list horizontal">
+									<li class="header-top__currency__item">€</li>
+									<li class="header-top__currency__item">£</li>
+									<li class="header-top__currency__item active">$</li>
+								</ul>
+							</div>
+							<div class="header-top__lang pull-left">
+								<select class="styled select-lang">
+									<option class="rus">Russian</option>
+									<option class="eng">English</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end .header-top -->
+		<div class="header-middle">
+			<div class="container">
+				<div class="row">
+					<div class="header-middle__logo"><a class="icon-logo-apostrophe" href="#"><img width="111" height="38" src="./img/logo.png" alt=""/></a></div>
+					<div class="header-middle__cart" id="header-cart">
+						<div class="header-middle__cart__container">
+							<div class="header-middle__cart__status icon-cart icon-arrow-small">
+								<strong>Your cart:</strong>
+								<span id="hm-cart-items">3 items on $1900</span>
+							</div>
+							<div class="cart__sub">
+								<ul class="cart__sub__list">
+									<li class="cart__sub__item">
+										<a class="cart__sub__product" href="#">
+											<span class="cart__sub__photo"><img width="76" height="61" src="./img/content/product-cart.gif" alt=""/></span>
+											<span class="cart__sub__info">
+												<span class="cart__sub__title">There are many variations</span>
+												<span class="cart__sub__price">$1400</span>
+											</span>
+										</a>
+										<a class="cart__sub__close icon-close-dark" href="#">close</a>
+									</li>
+									<li class="cart__sub__item">
+										<a class="cart__sub__product" href="#">
+											<span class="cart__sub__photo"><img width="76" height="61" src="./img/content/product-cart.gif" alt=""/></span>
+											<span class="cart__sub__info">
+												<span class="cart__sub__title">There are many variations</span>
+												<span class="cart__sub__price">$1400</span>
+											</span>
+										</a>
+										<a class="cart__sub__close icon-close-dark" href="#">close</a>
+									</li>
+									<li class="cart__sub__item">
+										<a class="cart__sub__product" href="#">
+											<span class="cart__sub__photo"><img width="76" height="61" src="./img/content/product-cart.gif" alt=""/></span>
+											<span class="cart__sub__info">
+												<span class="cart__sub__title">There are many variations</span>
+												<span class="cart__sub__price">$1400</span>
+											</span>
+										</a>
+										<a class="cart__sub__close icon-close-dark" href="#">close</a>
+									</li>
+								</ul>
+								<div class="cart__sub__setting">
+									<ul class="horizontal">
+										<li><a class="btn" href="#">My cart</a></li>
+										<li><a class="btn gray" id="cart-sub-clear" href="#">Clear</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-middle__nav" id="header-middle-nav">
+						<a class="icon-menu" href="#">
+							<span class="menu-line">
+								<span class="line"></span>
+								<span class="line"></span>
+								<span class="line"></span>
+							</span>
+							Categories
+						</a>
+					</div>
+				</div>
+			</div>
+		</div><!-- end .header-middle -->
+		<nav class="hm-nav__sub small" id="header-middle-nav-sub">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-sm-3">
+						<p>Desktops</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">PC</a><span class="count-number">2</span></li>
+							<li><a href="#">Mac</a><span class="count-number">25</span></li>
+						</ul>
+						<p>Laptops &amp; Notebook</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">Macs</a><span class="count-number">2</span></li>
+							<li><a href="#">Windows</a><span class="count-number">32</span></li>
+							<li><a href="#">Components</a><span class="count-number">22</span></li>
+							<li><a href="#">Mice and Trackballs</a><span class="count-number">12 089</span></li>
+							<li><a href="#">Monitors</a><span class="count-number">200</span></li>
+							<li><a href="#">Printers</a><span class="count-number">13</span></li>
+							<li><a href="#">Scanners</a><span class="count-number">4</span></li>
+							<li><a href="#">Web Cameras</a><span class="count-number">98</span></li>
+						</ul>
+						<p>Components</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">Mice and Trackballs</a><span class="count-number">2</span></li>
+							<li><a href="#">Monitors</a><span class="count-number">34</span></li>
+							<li><a href="#">Printers</a><span class="count-number">2</span></li>
+							<li><a href="#">Scanners</a><span class="count-number">956</span></li>
+							<li><a href="#">Web Cameras</a><span class="count-number">2</span></li>
+						</ul>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<p>Components</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">Mice and Trackballs</a><span class="count-number">2</span></li>
+							<li><a href="#">Monitors</a><span class="count-number">34</span></li>
+							<li><a href="#">Printers</a><span class="count-number">2</span></li>
+							<li><a href="#">Scanners</a><span class="count-number">956</span></li>
+							<li><a href="#">Web Cameras</a><span class="count-number">2</span></li>
+						</ul>
+						<p>Laptops &amp; Notebook</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">Macs</a><span class="count-number">2</span></li>
+							<li><a href="#">Windows</a><span class="count-number">32</span></li>
+							<li><a href="#">Components</a><span class="count-number">22</span></li>
+							<li><a href="#">Mice and Trackballs</a><span class="count-number">12 089</span></li>
+							<li><a href="#">Monitors</a><span class="count-number">200</span></li>
+							<li><a href="#">Printers</a><span class="count-number">13</span></li>
+							<li><a href="#">Scanners</a><span class="count-number">4</span></li>
+							<li><a href="#">Web Cameras</a><span class="count-number">98</span></li>
+						</ul>
+						<p>Desktops</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">PC</a><span class="count-number">2</span></li>
+							<li><a href="#">Mac</a><span class="count-number">25</span></li>
+						</ul>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<p>Desktops</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">PC</a><span class="count-number">2</span></li>
+							<li><a href="#">Mac</a><span class="count-number">25</span></li>
+						</ul>
+						<p>Laptops &amp; Notebook</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">Macs</a><span class="count-number">2</span></li>
+							<li><a href="#">Windows</a><span class="count-number">32</span></li>
+							<li><a href="#">Components</a><span class="count-number">22</span></li>
+							<li><a href="#">Mice and Trackballs</a><span class="count-number">12 089</span></li>
+							<li><a href="#">Monitors</a><span class="count-number">200</span></li>
+							<li><a href="#">Printers</a><span class="count-number">13</span></li>
+							<li><a href="#">Scanners</a><span class="count-number">4</span></li>
+							<li><a href="#">Web Cameras</a><span class="count-number">98</span></li>
+						</ul>
+						<p>Components</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">Mice and Trackballs</a><span class="count-number">2</span></li>
+							<li><a href="#">Monitors</a><span class="count-number">34</span></li>
+							<li><a href="#">Printers</a><span class="count-number">2</span></li>
+							<li><a href="#">Scanners</a><span class="count-number">956</span></li>
+							<li><a href="#">Web Cameras</a><span class="count-number">2</span></li>
+						</ul>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<p>Components</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">Mice and Trackballs</a><span class="count-number">2</span></li>
+							<li><a href="#">Monitors</a><span class="count-number">34</span></li>
+							<li><a href="#">Printers</a><span class="count-number">2</span></li>
+							<li><a href="#">Scanners</a><span class="count-number">956</span></li>
+							<li><a href="#">Web Cameras</a><span class="count-number">2</span></li>
+						</ul>
+						<p>Laptops &amp; Notebook</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">Macs</a><span class="count-number">2</span></li>
+							<li><a href="#">Windows</a><span class="count-number">32</span></li>
+							<li><a href="#">Components</a><span class="count-number">22</span></li>
+							<li><a href="#">Mice and Trackballs</a><span class="count-number">12 089</span></li>
+							<li><a href="#">Monitors</a><span class="count-number">200</span></li>
+							<li><a href="#">Printers</a><span class="count-number">13</span></li>
+							<li><a href="#">Scanners</a><span class="count-number">4</span></li>
+							<li><a href="#">Web Cameras</a><span class="count-number">98</span></li>
+						</ul>
+						<p>Desktops</p>
+						<ul class="hm-nav__sub__list">
+							<li><a href="#">PC</a><span class="count-number">2</span></li>
+							<li><a href="#">Mac</a><span class="count-number">25</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav><!-- end .hm-nav__sub -->
+		<div class="search-sub open">
+			<div class="search-sub__container">
+				<div class="container">
+					<div class="row">
+						<h2><span>Search</span> in this shop</h2>
+						<div class="search-sub__form">
+							<form action="#" method="post">
+								<ul class="search-sub__form__list">
+									<li class="search-sub__item big">
+										<input type="text" class="input-text search-text" placeholder="Search"/>
+									</li>
+									<li class="search-sub__item medium">
+										<select class="styled select-search">
+											<option>Insert search category</option>
+											<option>Jewelry &amp; Watches</option>
+											<option>Apparel &amp; Accessories</option>
+										</select>
+									</li>
+									<li class="search-sub__item small">
+										<button type="submit" class="btn-search icon-search-color">search</button>
+									</li>
+								</ul>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="header-top__search__btn">
+						<a id="header-search" class="icon-search-black" href="#">search</a>
+					</div>
+				</div>
+			</div>
+		</div><!-- end .search-sub -->
+	</header><!-- end .header -->
+	<div class="main" id="main">
+		<div class="breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<ul class="breadcrumbs__lsit horizontal">
+						<li>
+							<a href="#">Index</a>
+						</li>
+						<li>
+							<a href="#">Watches</a>
+						</li>
+						<li>
+							New Skeleton Mens Watches Mechanical Wrist Watch
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div><!-- end .breadcrumbs -->
+		<div class="your-cart">
+			<div class="page__head">
+				<div class="container">
+					<div class="row page__head__row">
+						<div class="col-lg-12">
+							<div class="page__head__container">
+								<h1>Shopping cart</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="your-cart__container container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="yc__table">
+							<div class="yc__row head">
+								<div class="yc__col image">Image</div>
+								<div class="yc__col name">Product Name</div>
+								<div class="yc__col model">Model</div>
+								<div class="yc__col quantity">Quantity</div>
+								<div class="yc__col price">Unit Price</div>
+								<div class="yc__col total">Total</div>
+							</div>
+							<div class="yc__row">
+								<div class="yc__col image"><a href="#"><img src="http://placehold.it/77x77" alt=""/></a></div>
+								<div class="yc__col name"><a href="#">Fashion Black Stainless Steel Luxury</a></div>
+								<div class="yc__col model">Model one</div>
+								<div class="yc__col quantity">
+									<div class="quantity__plugin">
+										<input type="text" class="input-text" value="2"/>
+										<a class="yc__row__delete" href="#">delete</a>
+									</div>
+								</div>
+								<div class="yc__col price">$134</div>
+								<div class="yc__col total"><span class="label-total">Total:</span> $134</div>
+							</div>
+							<div class="yc__row">
+								<div class="yc__col image"><a href="#"><img src="http://placehold.it/77x77" alt=""/></a></div>
+								<div class="yc__col name"><a href="#">Fashion Black Stainless Steel Luxury</a></div>
+								<div class="yc__col model">Model one</div>
+								<div class="yc__col quantity">
+									<div class="quantity__plugin">
+										<input type="text" class="input-text" value="2"/>
+										<a class="yc__row__delete" href="#">delete</a>
+									</div>
+								</div>
+								<div class="yc__col price">$134</div>
+								<div class="yc__col total"><span class="label-total">Total:</span> $134</div>
+							</div>
+							<div class="yc__row">
+								<div class="yc__col image"><a href="#"><img src="http://placehold.it/77x77" alt=""/></a></div>
+								<div class="yc__col name"><a href="#">Fashion Black Stainless Steel Luxury</a></div>
+								<div class="yc__col model">Model one</div>
+								<div class="yc__col quantity">
+									<div class="quantity__plugin">
+										<input type="text" class="input-text" value="2"/>
+										<a class="yc__row__delete" href="#">delete</a>
+									</div>
+								</div>
+								<div class="yc__col price">$134</div>
+								<div class="yc__col total"><span class="label-total">Total:</span> $134</div>
+							</div>
+							<div class="yc__row">
+								<div class="yc__col image"><a href="#"><img src="http://placehold.it/77x77" alt=""/></a></div>
+								<div class="yc__col name"><a href="#">Fashion Black Stainless Steel Luxury</a></div>
+								<div class="yc__col model">Model one</div>
+								<div class="yc__col quantity">
+									<div class="quantity__plugin">
+										<input type="text" class="input-text" value="2"/>
+										<a class="yc__row__delete" href="#">delete</a>
+									</div>
+								</div>
+								<div class="yc__col price">$134</div>
+								<div class="yc__col total"><span class="label-total">Total:</span> $134</div>
+							</div>
+							<div class="yc__row">
+								<div class="yc__col image"><a href="#"><img src="http://placehold.it/77x77" alt=""/></a></div>
+								<div class="yc__col name"><a href="#">Fashion Black Stainless Steel Luxury</a></div>
+								<div class="yc__col model">Model one</div>
+								<div class="yc__col quantity">
+									<div class="quantity__plugin">
+										<input type="text" class="input-text" value="2"/>
+										<a class="yc__row__delete" href="#">delete</a>
+									</div>
+								</div>
+								<div class="yc__col price">$134</div>
+								<div class="yc__col total"><span class="label-total">Total:</span> $134</div>
+							</div>
+						</div>
+						<div class="yc-text">
+							<h2>What would you like to do next?</h2>
+							<p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+						</div>
+						<ul class="yc-options__list" id="your-cart-options">
+							<li class="yc-options__row">
+								<a class="yc-options__visible" href="#">Use coupon code</a>
+								<div class="yc-options__hide">
+									<ul class="yc-options__hide__list horizontal">
+										<li><label class="label">Enter your coupon here</label></li>
+										<li><input type="text" class="input-text" value="2"/></li>
+										<li><a class="btn medium gray" href="#">Apply Coupon</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="yc-options__row">
+								<a class="yc-options__visible" href="#">Use gift voucher</a>
+								<div class="yc-options__hide">
+									<ul class="yc-options__hide__list horizontal">
+										<li><label class="label">Enter your gift voucher code here</label></li>
+										<li><input type="text" class="input-text" value="2"/></li>
+										<li><a class="btn medium gray" href="#">Apply voucher</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<div class="yc-results">
+							<div class="yc-results__item">
+								<table class="yc-results__table">
+									<tr>
+										<td>Sub-Total:</td>
+										<td>$350.00</td>
+									</tr>
+									<tr>
+										<td>Eco Tax (-2.00):</td>
+										<td>$6.00</td>
+									</tr>
+									<tr>
+										<td>VAT (20%):</td>
+										<td>$70.00</td>
+									</tr>
+									<tr>
+										<td>Total:</td>
+										<td><strong>$426.00</strong></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="yc-submit">
+							<ul class="yc-submit__list horizontal">
+								<li><a class="btn gray medium" href="#">Continue Shopping</a></li>
+								<li><a class="btn red medium" href="#">Checkout</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end .your-cart -->
+		<div class="promo-text">
+			<div class="container">
+				<div class="row">
+					<h2>
+						<span>Fashion Black</span>
+						<span>Stainless <strong>Steel Luxury</strong></span>
+						<span>Sport Analog</span>
+					</h2>
+				</div>
+			</div>
+		</div><!-- end .promo-text -->
+		<nav class="main-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-3 wow fadeInUp animated" data-wow-delay="0.2s" data-wow-offset="50" data-wow-duration="1s">
+						<p>Information</p>
+						<ul class="main-nav__list">
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Delivery Information</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms &amp; Conditions</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-3 wow fadeInUp animated" data-wow-delay="0.4s" data-wow-offset="50" data-wow-duration="1s">
+						<p>Extras</p>
+						<ul class="main-nav__list">
+							<li><a href="#">Brands</a></li>
+							<li><a href="#">Gift Vouchers</a></li>
+							<li><a href="#">Affiliates</a></li>
+							<li><a href="#">Specials</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-3 wow fadeInUp animated" data-wow-delay="0.6s" data-wow-offset="50" data-wow-duration="1s">
+						<p>My account</p>
+						<ul class="main-nav__list">
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Order History</a></li>
+							<li><a href="#">Wish List</a></li>
+							<li><a href="#">Newsletter</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-3 wow fadeInUp animated" data-wow-delay="0.8s" data-wow-offset="50" data-wow-duration="1s">
+						<p>Customer service</p>
+						<ul class="main-nav__list">
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Returns</a></li>
+							<li><a href="#">Site Map</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav><!-- end .main-nav -->
+		<div class="pay-systems">
+			<div class="container">
+				<div class="row">
+					<div class="pay-systems__buffer">
+						<ul>
+							<li><a class="visa" href="#"></a></li>
+							<li><a class="matercard" href="#"></a></li>
+							<li><a class="webmoney" href="#"></a></li>
+							<li><a class="alfa" href="#"></a></li>
+							<li><a class="paypal" href="#"></a></li>
+							<li><a class="unistream" href="#"></a></li>
+							<li><a class="ukash" href="#"></a></li>
+							<li><a class="easypay" href="#"></a></li>
+							<li><a class="skrill" href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!-- end .pay-systems -->
+	</div><!-- end .main -->
+	<footer class="footer" id="footer">
+		<div class="footer-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 pull-right">
+						<div class="social-buttons">
+							<ul class="social-buttons__list horizontal">
+								<li class="social-buttons__item"><a class="sb-vk" href="#"></a></li>
+								<li class="social-buttons__item"><a class="sb-tw" href="#"></a></li>
+								<li class="social-buttons__item"><a class="sb-yo" href="#"></a></li>
+								<li class="social-buttons__item"><a class="sb-ml" href="#"></a></li>
+								<li class="social-buttons__item"><a class="sb-fb" href="#"></a></li>
+								<li class="social-buttons__item"><a class="sb-ot" href="#"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="footer-middle__logo"><a href="#"><img width="111" height="38" src="./img/logo-dark.png" alt=""/></a></div>
+						<div class="footer-middle__design">
+							Design <a href="#">By MatArt</a>
+							<br>
+							OpenCart Man shop theme
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end .footer-middle -->
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<nav class="footer-bottom__nav">
+						<ul class="footer-bottom__nav__list horizontal">
+							<li class="footer-bottom__nav__item"><a href="#">My Account</a></li>
+							<li class="footer-bottom__nav__item"><a href="#">Register</a></li>
+							<li class="footer-bottom__nav__item"><a href="#">Login</a></li>
+							<li class="footer-bottom__nav__item"><a href="#">Wish List</a><span class="count-number">7</span></li>
+							<li class="footer-bottom__nav__item"><a href="#">Shopping Cart</a></li>
+							<li class="footer-bottom__nav__item"><a href="#">Checkout</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div><!-- end .footer-bottom -->
+	</footer><!-- end .footer -->
+	<div class="sepia-filter"></div><!-- end .sepia-filter -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="js/jquery-1.11.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/jquery.wow.min.js"></script>
+	<script src="js/jquery.nouislider.all.min.js"></script>
+	<script src="js/jquery.barrating.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/mans-main.js"></script>
+  </body>
+</html>
